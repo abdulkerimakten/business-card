@@ -1,0 +1,45 @@
+body{
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.avatar{
+    width: 160px;
+    height: 150px;
+}
+
+.avatar::before{
+    content: "";
+    background-image: url("images/hoverimage.jpeg");
+    width: 100%;
+    height: 100%;
+    transition: background-image 0.3s;
+    background-size: cover;
+    display: block;
+    
+
+}
+
+.avatar:hover::before{
+    background-image: url("images/kerim.jpeg");
+    transform: scale(1.2);
+}
+
+
+.card{
+    display: flex;
+    width: 400px;
+    padding: 20px;
+    justify-content: space-around;
+
+    margin: 0 auto;
+
+    text-align: center;
+    color: #2b2839;
+    background-color: #fec89a;
+    
+}
+
+.border-blue{
+    border: 5px dotted #ffe5d9;
+}
